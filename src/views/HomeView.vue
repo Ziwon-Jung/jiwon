@@ -5,9 +5,19 @@
       <div> MyTodo makes it easy to stay organized and manage your life.</div>
     </div>
     <div class="home__ask">What is your name?</div>
+    <TextField placeholder="input your name" :type="'border'" />
   </div>
-</template>
 
+</template>
+<script>
+import TextField from '@/components/TextField.vue';
+
+export default {
+  components: {
+    TextField,
+  }
+};
+</script>
 <style scoped lang="scss">
 $font-family : 'Roboto';
 .home{
